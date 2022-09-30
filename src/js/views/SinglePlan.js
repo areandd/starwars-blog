@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-export const Planets = (props) => {
+export const SinglePlan = (props) => {
   return (
-    <div className="card" style={{ width: "18rem", display: "inline-flex" }}>
+    <div className="card" style={{ width: "75%", display: "inline-flex", justifySelf:"center", margin:"10px" }}>
       <img
         className="card-img-top"
         src="https://picsum.photos/400/200"
@@ -13,10 +13,8 @@ export const Planets = (props) => {
         <p className="card-text">gravity: {props.planet.gravity}</p>
         <p className="card-text">climate: {props.planet.climate}</p>
         <p className="card-text">terrain: {props.planet.terrain}</p>
-        <a href="/single-plan" className="btn btn-primary">
-          learn more
-        </a>
       </div>
     </div>
   );
 };
+

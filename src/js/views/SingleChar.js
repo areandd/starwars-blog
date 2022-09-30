@@ -1,8 +1,10 @@
 import React from "react";
 
-export const Characters = (props) => {
+
+
+export const SingleChar = (props) => {
   return (
-    <div className="card" style={{ width: "18rem", display: "inline-flex" }}>
+    <div className="card" style={{ width: "75%", display: "inline-flex", justifySelf:"center", margin:"10px" }}>
       <img
         className="card-img-top"
         src="https://picsum.photos/400/200"
@@ -13,9 +15,6 @@ export const Characters = (props) => {
         <p className="card-text">gender: {props.character.gender}</p>
         <p className="card-text">mass: {props.character.mass}</p>
         <p className="card-text">home: {props.character.height}</p>
-        <a href="/single-char" className="btn btn-primary">
-        learn more
-        </a>
       </div>
     </div>
   );

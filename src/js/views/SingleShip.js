@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-export const Starships = (props) => {
+export const SingleShip = (props) => {
   return (
-    <div className="card" style={{ width: "18rem", display: "inline-flex" }}>
+    <div className="card" style={{ width: "75%", display: "inline-flex", justifySelf:"center", margin:"10px" }}>
       <img
         className="card-img-top"
         src="https://picsum.photos/400/200"
@@ -13,10 +13,8 @@ export const Starships = (props) => {
         <p className="card-text">length: {props.starship.length}</p>
         <p className="card-text">crew: {props.starship.crew}</p>
         <p className="card-text">passengers: {props.starship.passengers}</p>
-        <a href="single-ship" className="btn btn-primary">
-        learn more
-        </a>
       </div>
     </div>
   );
 };
+

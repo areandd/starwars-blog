@@ -20,7 +20,7 @@ export const Home = () => {
     <div>
       <break />
       <h1>Characters</h1>
-
+      
       <div className="container-fluid py-2" styles={divStyle}>
         <div className="d-flex flex-row flex-nowrap">
           {store.characters.map((character) => {
