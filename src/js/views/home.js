@@ -32,8 +32,8 @@ export const Home = () => {
       <br />
       <h1>Starships</h1>
 
-      <div className="container-fluid py-2" styles={divStyle}>
-        <div className="d-flex flex-row flex-nowrap">
+      <div className="container-fluid py-2" >
+        <div className="d-flex flex-row flex-nowrap" styles={{overflow: "auto"}}>
           {store.starships.map((starship) => {
             return <Starships starship={starship} />;
           })}
