@@ -11,19 +11,45 @@ export const Home = () => {
   console.log(store.starships);
   console.log(store.planets);
 
+  const divStyle = {
+    overflowY: "scroll",
+    position: "relative",
+  };
+
   return (
     <div>
-      {store.characters.map((character) => {
-        return <Characters character={character} />;
-      })}
+      <break />
+      <h1>Characters</h1>
 
-      {store.starships.map((starship) => {
-        return <Starships starship={starship} />;
-      })}
+      <div className="container-fluid py-2" styles={divStyle}>
+        <div className="d-flex flex-row flex-nowrap">
+          {store.characters.map((character) => {
+            return <Characters character={character} />;
+          })}
+        </div>
+      </div>
 
-      {store.planets.map((planet) => {
-        return <Planets planet={planet} />;
-      })}
+      <br />
+      <h1>Starships</h1>
+
+      <div className="container-fluid py-2" styles={divStyle}>
+        <div className="d-flex flex-row flex-nowrap">
+          {store.starships.map((starship) => {
+            return <Starships starship={starship} />;
+          })}
+        </div>
+      </div>
+
+      <br />
+      <h1>Planets</h1>
+
+      <div className="container-fluid py-2" styles={divStyle}>
+        <div className="d-flex flex-row flex-nowrap">
+          {store.planets.map((planet) => {
+            return <Planets planet={planet} />;
+          })}
+        </div>
+      </div>
     </div>
   );
 };
