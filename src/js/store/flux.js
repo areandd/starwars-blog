@@ -21,6 +21,14 @@ const getState = ({ getStore, getActions, setStore }) => {
             setStore({ starships: starships.results });
           });
       },
+
+      getPlanets: () => {
+        fetch("https://swapi.dev/api/planets")
+          .then((resp) => resp.json())
+          .then((planets) => {
+            setStore({ planets: planets.results });
+          });
+      }
     },
   };
 };
