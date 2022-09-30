@@ -1,12 +1,14 @@
 import React from "react";
 
-export default function Card(props) {
+export const Characters = (props) => {
   return (
-    <div className="card" style={{width: "18rem"}}>
+    <div className="card" style={{width: "18rem", display: "flex"}}>
       <img className="card-img-top" src="..." alt="Card image cap" />
       <div className="card-body">
         <h5 className="card-title">
             {props.item.name}
+            
+            
         </h5>
         <p className="card-text">
           Some quick example text to build on the card title and make up the
